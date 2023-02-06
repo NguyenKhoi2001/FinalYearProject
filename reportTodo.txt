@@ -1,0 +1,30 @@
+Final project to do
+
+Front end
+- homepage: category view, product (done)
+
+- product details
+- All products
+
+-Search
+
+- about us, support (question)
+- login, register
+
+User:
+- shopping cart
+- User edit
+- User order manage
+
+Admin
+- manage product:
+ + add product
+ + delete product
+ + update product
+
+
+
+chat bot
+
+backend:
+- add about 50 products

@@ -1,0 +1,223 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; 
+    /* default size is 16px => size = 10px = 1rem */
+}
+
+body{
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    'nav-left nav-top nav-top'
+    'nav-left nav-bottom-left nav-bottom-right'
+    ;
+    grid-template-columns: minmax(200px,1fr) minmax(600px,3fr) minmax(400px,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+    height: 8vh;
+}
+.nav-left{
+    grid-area: nav-left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    font-size: 40px;
+    font-style: italic;
+    background-color: orange;
+    border-radius: 50%;
+    width: 150px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.nav-left a{
+    color: white;
+}
+.nav-top{
+    grid-area: nav-top;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.nav-bottom-left{
+    grid-area: nav-bottom-left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 30px;
+}
+.nav-bottom-right{
+    grid-area: nav-bottom-right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 30px;
+}
+.support, .navigation, .nav-bottom-right,.personal{
+    display: flex;
+}
+.support li{
+    font-size: 16px;
+    padding: 0 30px;
+    height: 100%;
+}
+.support li a{
+    color: grey;
+}
+.support li:last-child{
+    margin-right: 0;
+    padding-right: 15px;
+}
+/*underline effect*/
+.navigation li{
+    margin: 0 20px;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+.navigation li a{
+    color: orange;
+}
+
+.navigation li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.navigation li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.search-bar input{
+    height: 35px;
+    width: 200px;
+    padding: 0 15px;
+    border-radius: 25px;
+}
+.personal li{
+    padding: 0 15px;
+}
+.personal li:last-child{
+    margin-right: 15px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    position: relative;
+    /* border: 3px solid black; */
+}
+.icon span{
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-drop{
+    display: none;
+}
+.section{
+    padding: 50px 0 75px 0;
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+}
+.footer{
+    font-size: 15px;
+    color: black;
+}
+.footer .row{
+    display: flex;
+}
+.footer .row .col{
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .row .col div{
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer .row .col ul{
+    margin-top: 50px;
+    text-align: left;
+}
+.footer .row .col .icon-show{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.footer .row .col img{
+    width: 50px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.footer .row .col ul li:hover{
+    cursor: pointer;
+    color: orange;
+}
+
+.footer .row .col ul li:hover img{
+    filter: grayscale(0);
+}
+.copy-right{
+    text-align: center;
+    font-size: 15px;
+}

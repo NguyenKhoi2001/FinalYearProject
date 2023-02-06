@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--boxicon for icon-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--glider js-->
+    <link rel="stylesheet" href="/library/glider/glider.min.css" />
+
+    <!--General css-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="body.css" />
+    <!--Specific css-->
+    <link rel="stylesheet" href="productDetail.css" />
+    <title>{{tittle}}</title>
+  </head>
+
+  <script src="/library/glider/glider.min.js"></script>
+  <body>
+    <div class="navbar">
+      <div class="nav-left">
+        <a href="/#"><img src="assets/images/logo.jpg" /></a>
+      </div>
+      <div class="nav-top">
+        <ul class="support">
+          <li><a href="{{url}}/help">Help</a></li>
+          <li><a href="{{url}}/tracking">Track Order</a></li>
+          <li><a href="{{url}}/signin">Sign In</a></li>
+          <li><a href="{{url}}/contact">Contact</a></li>
+          <li><a href="{{url}}/findus">Find US</a></li>
+        </ul>
+      </div>
+      <div class="nav-bottom-left">
+        <ul class="navigation">
+          <li><a href="{{url}}/food" onclick="">FOOD</a></li>
+          <li><a href="{{url}}/food" onclick="">BREADKFAST</a></li>
+          <li><a href="{{url}}/food" onclick="">LUNCH</a></li>
+          <li><a href="{{url}}/food" onclick="">DINNER</a></li>
+          <li><a href="{{url}}/food" onclick="">DRINKS</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-bottom-right">
+        <div class="search-bar">
+          <input type="text" placeholder="Search.." />
+        </div>
+        <ul class="personal">
+          <li class="icon">
+            <a href="{{url}}/user/{{userid}}"><i class="bx bxs-user"></i></a>
+          </li>
+          <li class="icon">
+            <a href="{{url}}/user/{{userid}}/love"
+              ><i class="bx bxs-heart"></i>
+              <span class="num-display">0</span>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="{{url}}/{{userid}}/cart"
+              ><i class="bx bx-cart"></i>
+              <span class="num-display">0</span>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-drop">
+          <i class="bx bx-menu" onclick="showNav()"></i>
+        </div>
+      </div>
+    </div>
+    <div class="responsiveNavigation">
+      <ul class="navigation">
+        <li><a href="{{url}}/food" onclick="">FOOD</a></li>
+        <li><a href="{{url}}/food" onclick="">BREADKFAST</a></li>
+        <li><a href="{{url}}/food" onclick="">LUNCH</a></li>
+        <li><a href="{{url}}/food" onclick="">DINNER</a></li>
+        <li><a href="{{url}}/food" onclick="">DRINKS</a></li>
+      </ul>
+      <ul class="responsiveSupport">
+        <li><a href="{{url}}/help">Help</a></li>
+        <li><a href="{{url}}/tracking">Track Order</a></li>
+        <li><a href="{{url}}/signin">Sign In</a></li>
+        <li><a href="{{url}}/contact">Contact</a></li>
+        <li><a href="{{url}}/findus">Find US</a></li>
+      </ul>
+    </div>
+    <div class="responsiveSearchBar">
+      <input type="text" placeholder="Search.." />
+    </div>
+
+    <div class="hero">
+      <img src="assets/images/herobackground.jpg" alt="BackGround" />
+      <div class="hero-text">
+        <span>Hương Vị Mới 2023</span>
+        <h1>DINH DƯỠNG BỮA SÁNG</h1>
+        <div>Sự đa dạng về các bữa sáng mới vừa mới xuất hiện</div>
+        <a class="button-1" href="">XEM NGAY</a>
+      </div>
+    </div>
+
+    <!-- mealType -->
+    <section class="section mealType">
+      <div class="underline">
+        <a id="mealType-h1" href="/allfood">
+          <h1>CÁC BỮA ĂN TRONG NGÀY</h1>
+        </a>
+      </div>
+      <div class="mealType-center">
+        <div class="mealType">
+          <a href="/#">
+            <img src="assets/images/breakfast.jpg" alt="" />
+          </a>
+
+          <div>
+            <p>BỮA SÁNG</p>
+          </div>
+        </div>
+        <div class="mealType">
+          <a href="/#">
+            <img src="assets/images/lunch.jpg" alt="" />
+          </a>
+          <div>
+            <p>BỮA TRƯA</p>
+          </div>
+        </div>
+        <div class="mealType">
+          <a href="/#">
+            <img src="assets/images/dinner.jpg" alt="" />
+          </a>
+          <div>
+            <p>BỮA TỐI</p>
+          </div>
+        </div>
+        <div class="mealType">
+          <a href="/#">
+            <img src="assets/images/dessert.jpg" alt="" />
+          </a>
+          <div>
+            <p>TRÁNG MIỆNG</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category -->
+    <section class="section category">
+      <div class="underline">
+        <a id="category-h1" href="/allfood">
+          <h1>THỰC ĐƠN TỪNG LOẠI</h1>
+        </a>
+      </div>
+
+      <div class="glider-contain category-center">
+        <div class="glider">
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/rice.jpg" alt="" />
+              <div>
+                <p>Món Cơm</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/pho.jpg" alt="" />
+              <div>
+                <p>Phở & Hủ Tíu</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/salad.jpg" alt="" />
+              <div>
+                <p>Món Rau</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/banhmi.jpg" alt="" />
+              <div>
+                <p>Bánh Mì</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/spicynoodle.jpg" alt="" />
+              <div>
+                <p>Mì Cay</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/drink.jpg" alt="" />
+              <div>
+                <p>Giải Khát</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/snack.jpg" alt="" />
+              <div>
+                <p>Ăn Vặt</p>
+              </div>
+            </a>
+          </div>
+          <div class="category-item">
+            <a href="/#">
+              <img src="/assets/images/vegan.jpg" alt="" />
+              <div>
+                <p>Đồ Chay</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="glider-prev">«</button>
+        <button class="glider-next">»</button>
+      </div>
+    </section>
+  </body>
+  <script>
+    new Glider(document.querySelector(".glider"), {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      draggable: true,
+      arrows: {
+        prev: ".glider-prev",
+        next: ".glider-next",
+      },
+      responsive: [
+        {
+          // screens greater than >= 600
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          // screens greater than >= 0
+          breakpoint: 0,
+          settings: {
+            // Set to `auto` and provide item width to adjust to viewport
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+    console.log("loaded");
+    var navigation = document.querySelector(".responsiveNavigation");
+    var searchBar = document.querySelector(".responsiveSearchBar");
+    function showNav() {
+      console.log("click");
+      if (navigation.style.display != "block") {
+        navigation.style.display = "block";
+        searchBar.style.display = "none";
+      } else {
+        navigation.style.display = "none";
+        var mediaScreen = window.matchMedia("(max-width: 600px)");
+        if (mediaScreen.matches) {
+          searchBar.style.display = "block";
+        }
+      }
+      console.log(navigation.style.display);
+    }
+  </script>
+</html>
