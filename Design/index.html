@@ -16,9 +16,9 @@
 
     <!--General css-->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="body.css" />
+    <!-- <link rel="stylesheet" href="body.css" /> -->
     <!--Specific css-->
-    <link rel="stylesheet" href="productDetail.css" />
+    <link rel="stylesheet" href="cart.css" />
     <title>{{tittle}}</title>
   </head>
 
@@ -93,139 +93,83 @@
       <input type="text" placeholder="Search.." />
     </div>
 
-    <div class="hero">
-      <img src="assets/images/herobackground.jpg" alt="BackGround" />
-      <div class="hero-text">
-        <span>Hương Vị Mới 2023</span>
-        <h1>DINH DƯỠNG BỮA SÁNG</h1>
-        <div>Sự đa dạng về các bữa sáng mới vừa mới xuất hiện</div>
-        <a class="button-1" href="">XEM NGAY</a>
+    <div class="container cart">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtitle</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="assets/images/lunch.jpg" />
+              <div>
+                <p>Món ăn</p>
+                <span>Price: 50$</span>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input type="number" value="1" min="1" />
+          </td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="assets/images/lunch.jpg" />
+              <div>
+                <p>Món ăn</p>
+                <span>Price: 50$</span>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input type="number" value="1" min="1" />
+          </td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="assets/images/lunch.jpg" />
+              <div>
+                <p>Món ăn</p>
+                <span>Price: 50$</span>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input type="number" value="1" min="1" />
+          </td>
+          <td>$50</td>
+        </tr>
+      </table>
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtitle</td>
+            <td>$200</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$200</td>
+          </tr>
+        </table>
       </div>
+      <a href="#" class="checkout-btn">Proceed to checkout</a>
     </div>
-
-    <!-- mealType -->
-    <section class="section mealType">
-      <div class="underline">
-        <a id="mealType-h1" href="/allfood">
-          <h1>CÁC BỮA ĂN TRONG NGÀY</h1>
-        </a>
-      </div>
-      <div class="mealType-center">
-        <div class="mealType">
-          <a href="/#">
-            <img src="assets/images/breakfast.jpg" alt="" />
-          </a>
-
-          <div>
-            <p>BỮA SÁNG</p>
-          </div>
-        </div>
-        <div class="mealType">
-          <a href="/#">
-            <img src="assets/images/lunch.jpg" alt="" />
-          </a>
-          <div>
-            <p>BỮA TRƯA</p>
-          </div>
-        </div>
-        <div class="mealType">
-          <a href="/#">
-            <img src="assets/images/dinner.jpg" alt="" />
-          </a>
-          <div>
-            <p>BỮA TỐI</p>
-          </div>
-        </div>
-        <div class="mealType">
-          <a href="/#">
-            <img src="assets/images/dessert.jpg" alt="" />
-          </a>
-          <div>
-            <p>TRÁNG MIỆNG</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Category -->
-    <section class="section category">
-      <div class="underline">
-        <a id="category-h1" href="/allfood">
-          <h1>THỰC ĐƠN TỪNG LOẠI</h1>
-        </a>
-      </div>
-
-      <div class="glider-contain category-center">
-        <div class="glider">
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/rice.jpg" alt="" />
-              <div>
-                <p>Món Cơm</p>
-              </div>
-            </a>
-          </div>
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/pho.jpg" alt="" />
-              <div>
-                <p>Phở & Hủ Tíu</p>
-              </div>
-            </a>
-          </div>
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/salad.jpg" alt="" />
-              <div>
-                <p>Món Rau</p>
-              </div>
-            </a>
-          </div>
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/banhmi.jpg" alt="" />
-              <div>
-                <p>Bánh Mì</p>
-              </div>
-            </a>
-          </div>
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/spicynoodle.jpg" alt="" />
-              <div>
-                <p>Mì Cay</p>
-              </div>
-            </a>
-          </div>
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/drink.jpg" alt="" />
-              <div>
-                <p>Giải Khát</p>
-              </div>
-            </a>
-          </div>
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/snack.jpg" alt="" />
-              <div>
-                <p>Ăn Vặt</p>
-              </div>
-            </a>
-          </div>
-          <div class="category-item">
-            <a href="/#">
-              <img src="/assets/images/vegan.jpg" alt="" />
-              <div>
-                <p>Đồ Chay</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <button class="glider-prev">«</button>
-        <button class="glider-next">»</button>
-      </div>
-    </section>
   </body>
   <script>
     new Glider(document.querySelector(".glider"), {

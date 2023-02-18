@@ -1,0 +1,47 @@
+.cart {
+  margin: 10rem;
+}
+
+.cart tr {
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 0.5rem;
+  color: white;
+  background-color: orange;
+}
+
+td input {
+  width: 5rem;
+  height: 3rem;
+  padding: 0.5rem;
+}
+
+td a {
+  color: orange;
+  font-size: 24px;
+}
+
+td img {
+  width: 150px;
+  height: 150px;
+  margin-right: 1rem;
+}
+
+.total-price {
+}
+
+.total-price table {
+}
